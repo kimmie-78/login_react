@@ -1,38 +1,80 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+#main-holder {
+  width: 60rem;
+  height: 100%;
+  position:center ;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,#3ab19b, #61a445);;
+  padding: 10rem 0;
+  border-radius: 20px;
+  box-shadow: 0 2rem 6rem rgba(20, 39, 82, 255)
+}
+
+#signin-header {
+  font-size: 50px;
+  font-style: oblique;
+  text-emphasis-color: 0 2rem 6rem rgba(20, 39, 82, 255) ;
+  text-decoration: #3ab19b;
+  text-justify: center;
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container {
+  margin-right: 30px;
+  width: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Sign-In-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.Sign-In-form-field {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px  #e4eaf0 ;
+  width: 400px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+#signin-form-submit {
+  padding: 10px 20px;
+  background-color: #3ab19b;
+  border: none;
   color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#signin-form-submit:hover {
+  background-color: #61a445;
 }
